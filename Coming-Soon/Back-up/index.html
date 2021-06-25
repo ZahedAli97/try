@@ -1,0 +1,177 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Z Square</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- background-color: ; -->
+
+    <style>
+        @font-face {
+            font-family: "integralCF-EB";
+            src: url(IntegralCF-ExtraBold.otf);
+        }
+
+        @font-face {
+            font-family: "integralCF-Reg";
+            src: url(IntegralCF-Regular.otf);
+        }
+
+        @font-face {
+            font-family: "silkamedium";
+            src: url(silkamedium.otf);
+        }
+
+        body {
+            background-color: black;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10%;
+            width: 15%;
+        }
+
+        h1 {
+            margin: 0;
+            color: fed835;
+            text-align: center;
+            font-size: 250%;
+            font-family: "integralCF-EB";
+        }
+
+        h3 {
+            margin: 0;
+            color: FFFFFF;
+            text-align: center;
+            font-size: 200%;
+            font-family: "integralCF-Reg";
+
+        }
+
+        #checkback {
+            color: FFFFFF;
+            text-align: center;
+            font-size: 130%;
+            font-family: "silkamedium";
+        }
+
+        #info-block {
+            color: FFFFFF;
+            text-align: center;
+            margin-top: 10%;
+            font-family: "silkamedium";
+        }
+
+        p {
+            display: inline;
+
+        }
+
+
+
+        #contactDetails {
+            color: FFFFFF;
+            text-align: right;
+            font-size: 90%;
+
+        }
+
+        #divider {
+            display: inline-block;
+            width: 50%;
+            margin-left: 4%;
+            margin-right: 2%;
+            border-bottom: 1px solid #fed835;
+        }
+
+        .rotate180 {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+        }
+
+        @media only screen and (max-width: 1024px) {
+
+            /* For mobile phones: */
+            img {
+                margin-top: 20%;
+                width: 50%;
+            }
+
+            h1 {
+                font-size: 120%;
+            }
+
+            h3 {
+                font-size: 100%;
+
+            }
+
+            #checkback {
+                font-size: 80%;
+            }
+
+            #info-block {
+                font-size: 70%;
+                margin-top: 75%;
+            }
+
+            #info {
+                margin-bottom: 0%;
+
+            }
+
+            p {
+                display: block;
+
+            }
+
+            #contactDetails {
+                color: FFFFFF;
+                text-align: center;
+                font-size: 90%;
+                margin: 0%;
+
+            }
+
+            #divider {
+                width: 80%;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="./Z square Logo.png" />
+    <h1>YOUR BRAND'S DIGITAL VOICE</h1>
+    <h3>IS IN THE WORKS</h3>
+    <h5 id="checkBack">Check back soon to learn more</h5>
+    <h5 id="info-block">
+        <p id="info">FOR MORE INFO CONTACT US</p>
+        <p id="divider"></p>
+        <p id="contactDetails">+91-8328604290 <span style="color:383838">|</span> digital.zsquare@gmail.com</p>
+    </h5>
+
+    <script>
+        document.getElementById('image').addEventListener("mouseover", function () {
+            document.getElementById('image').style.WebkitTransitionDuration = '1s';
+            document.getElementById('image').style.webkitTransform = 'rotate(180deg)';
+        });
+        document.getElementById('image').addEventListener("mouseout", function () {
+            document.getElementById('image').style.WebkitTransitionDuration = '1s';
+            document.getElementById('image').style.webkitTransform = 'rotate(0deg)';
+        });
+    </script>
+</body>
+
+</html>

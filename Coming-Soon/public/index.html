@@ -1,0 +1,222 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Z Square</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- background-color: fed835; -->
+
+    <style>
+        @font-face {
+            font-family: "integralCF-EB";
+            src: url(IntegralCF-ExtraBold.otf);
+        }
+
+        @font-face {
+            font-family: "integralCF-Reg";
+            src: url(IntegralCF-Regular.otf);
+        }
+
+        @font-face {
+            font-family: "silkamedium";
+            src: url(silkamedium.otf);
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 13.8%;
+            margin-bottom: 2%;
+            width: 10.5%;
+            padding: 0px;
+            bottom: 0px
+        }
+
+        #main-title {
+            color: #FFD90F;
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 262%;
+            letter-spacing: 0.1em;
+            font-family: "integralCF-EB";
+            transform: scale(1, 1);
+
+        }
+
+        #sub-title {
+            margin: 0%;
+            color: FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 242%;
+            letter-spacing: 0.18em;
+            font-family: "integralCF-Reg";
+            transform: scale(1, 1);
+
+        }
+
+        #checkback {
+            color: FFFFFF;
+            margin-top: 3%;
+            text-align: center;
+            font-size: 120%;
+            font-family: "silkamedium";
+        }
+
+        #info-block {
+            display: inline-block;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+        }
+
+
+
+        #info {
+            display: inline-block;
+            color: FFFFFF;
+            font-family: "silkamedium";
+            font-size: 80%;
+            letter-spacing: 0.2em;
+            padding-left: 2%;
+            padding-bottom: 1%;
+            padding-right: 1%;
+
+        }
+
+
+        #contactDetails {
+            display: inline-block;
+            text-align: right;
+            color: FFFFFF;
+            font-size: 80%;
+            font-family: "silkamedium";
+            letter-spacing: 0.03em;
+            padding-left: 52%;
+
+        }
+
+        #divider {
+            display: inline-block;
+            width: 51%;
+            margin-top: 100%;
+            margin-top: 0%;
+            padding: 0;
+            border-bottom: 0.1px solid #fed835;
+            top: 20;
+            position: absolute;
+            transform: scale(1, 0.5);
+
+        }
+
+        .rotate180 {
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+        }
+
+        @media only screen and (max-width: 1024px) {
+
+            /* For mobile phones: */
+            #image {
+                width: 30%;
+            }
+
+            #main-title {
+                font-size: 300%;
+                margin-bottom: 5%;
+            }
+
+            #sub-title {
+                font-size: 160%;
+
+            }
+
+            #checkback {
+                margin-top: 10%;
+                font-size: 100%;
+            }
+
+            #info-block {
+                display: block;
+                bottom: 0%;
+            }
+
+            #info {
+                display: block;
+                text-align: center;
+
+            }
+
+            #contactDetails {
+                display: block;
+                text-align: center;
+                color: FFFFFF;
+                font-size: 80%;
+                padding: 0%;
+            }
+
+            #divider {
+                margin: auto;
+                display: block;
+                position: static;
+                text-align: center;
+                width: 80%;
+            }
+
+            #bar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="./Coming Soon Z square Logo.png" />
+    <p id="main-title">YOUR BRAND'S DIGITAL VOICE</p>
+    <p id="sub-title">IS IN THE WORKS</p>
+    <p id="checkBack">Check back soon to learn more.</p>
+    <div id="info-block">
+        <p id="info">FOR MORE INFO CONTACT US</p>
+        <p id="divider"></p>
+        <p id="contactDetails">+91-8328604290 <span id="bar" style="color:383838">|</span> digital.zsquare@gmail.com</p>
+    </div>
+
+    <script>
+        document.getElementById('image').addEventListener("touchstart", function () {
+            document.getElementById('image').style.WebkitTransitionDuration = '1s';
+            document.getElementById('image').style.webkitTransform = 'rotate(180deg)';
+            setTimeout(function () {
+                document.getElementById('image').style.WebkitTransitionDuration = '1s';
+                document.getElementById('image').style.webkitTransform = 'rotate(0deg)';
+            }, 1500);
+        });
+        document.getElementById('image').addEventListener("mouseover", function () {
+            document.getElementById('image').style.WebkitTransitionDuration = '1s';
+            document.getElementById('image').style.webkitTransform = 'rotate(180deg)';
+        });
+        document.getElementById('image').addEventListener("mouseout", function () {
+            document.getElementById('image').style.WebkitTransitionDuration = '1s';
+            document.getElementById('image').style.webkitTransform = 'rotate(0deg)';
+        });
+
+    </script>
+</body>
+
+</html>
